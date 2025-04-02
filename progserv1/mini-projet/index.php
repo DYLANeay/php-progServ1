@@ -44,6 +44,7 @@ echo "<br>";
 
 // Récupère tous les animaux
 $pets = getPets();
+print_r($pets);
 ?>
 
 <!DOCTYPE html>
