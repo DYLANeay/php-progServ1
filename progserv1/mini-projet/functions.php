@@ -2,26 +2,6 @@
 
 $pets = [];
 
-
-// $pets = [
-//     "Caramel" => [
-//         "name" => "Caramel",
-//         "age" => 3,
-//     ],
-//     "Rex" => [
-//         "name" => "Rex",
-//         "age" => 8,
-//     ],
-//     'Tweety' => [
-//         'name' => 'Tweety',
-//         'age' => 1
-//     ],
-//     'Godzilla' => [
-//         'name' => 'Godzilla',
-//         'age' => 4
-//     ]
-// ];
-
 function getPets() {
     global $pets;
 

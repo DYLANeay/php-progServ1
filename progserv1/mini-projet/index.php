@@ -10,6 +10,7 @@ addPet("Rex", 8);
 // Crée Tweety, un oiseau de 1 an
 addPet("Tweety", 1);
 
+
 // Crée Godzilla, un lézard de 4 ans
 addPet("Godzilla", 4);
 
@@ -71,7 +72,7 @@ $pets = getPets();
             <?php foreach ($pets as $pet) { ?>
                 <tr>
                     <td><?php echo $pet['name'] ?></td>
-                    <td><?= $pet['age'] ?> an(s)</td>
+                    <td><?php echo $pet['age'] . " " . ($pet["age"] > 1 ? "ans" : "an"); ?></td>
                 </tr>
             <?php } ?>
         </tbody>
