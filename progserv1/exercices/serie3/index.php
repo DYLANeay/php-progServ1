@@ -144,7 +144,7 @@ $people = [
 ];
 
 function compareAge($a, $b) {
-    if ($a["age"] > $b["age"]) {
+    if ($a["age"] > $b["age"]) { //$a correspond à une personne, $b correspond à une autre personne 
         return 1;
     } else if ($a["age"] < $b["age"]) {
         return -1;
@@ -152,7 +152,7 @@ function compareAge($a, $b) {
         return 0;
     }
 }
-
+//usort s'attend à DEUX et seulement DEUX arguments, ce qui fait que ça marche ! 
 usort($people, "compareAge");
 
 print_r($people);
