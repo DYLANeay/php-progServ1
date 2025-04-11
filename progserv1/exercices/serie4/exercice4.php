@@ -94,7 +94,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label for="message">Message :</label><br>
         <textarea id="message" name="message"><?php echo isset($message) ? $message : ''; ?></textarea>
-
         <br>
 
         <label for="consent">
