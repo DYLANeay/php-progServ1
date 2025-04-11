@@ -1,7 +1,7 @@
 cours progServ1 HEIG-VD
 lien du github : https://github.com/heig-vd-progserv1-course
 
-script that auto-creates php exercices files : 
+script that auto-creates php exercices files : (on the folder)
 read -p "Enter the number of PHP files to create: " n; for i in $(seq 1 $n); do touch "exercice$i.php"; done
 
 
