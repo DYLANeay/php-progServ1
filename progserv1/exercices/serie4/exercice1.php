@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="contact.php" method="POST">
+    <form action="exercice1.php" method="POST">
         <label for="firstName">Prénom :</label><br>
         <input type="text" id="firstName" name="firstName">
 

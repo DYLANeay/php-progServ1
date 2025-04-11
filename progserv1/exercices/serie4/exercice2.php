@@ -1,3 +1,20 @@
+<?php
+// Gère la soumission du formulaire sur une autre page
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstName = $_POST["firstName"];
+    $lastName = $_POST["lastName"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+    $consent = isset($_POST["consent"]) ? true : false;
+
+    echo "Prénom : " . $firstName . "<br>";
+    echo "Nom : " . $lastName . "<br>";
+    echo "Adresse e-mail : " . $email . "<br>";
+    echo "Message : " . $message . "<br>";
+    echo "Consentement : " . ($consent ? "Oui" : "Non") . "<br>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +25,7 @@
 </head>
 
 <body>
-    <form action="contact.php" method="POST">
+    <form action="exercice2.php" method="POST">
         <label for="firstName">Prénom :</label><br>
         <input type="text" id="firstName" name="firstName">
 
