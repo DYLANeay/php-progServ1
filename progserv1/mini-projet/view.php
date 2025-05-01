@@ -17,6 +17,11 @@ if (isset($_GET["id"])) {
     // Si l'ID n'est pas passé dans l'URL, on redirige vers la page d'accueil
     header("Location: index.php");
 }
+
+// Vérifie si le paramètre `success` est présent dans l'URL
+if (isset($_GET['success']) && $_GET['success'] == 1) {
+    echo '<div style="color: green; font-weight: bold; margin-bottom: 20px; display: flex; align-items: center; justify-content:center;">L\'animal a été ajouté avec succès !</div>';
+}
 ?>
 
 <!DOCTYPE html>

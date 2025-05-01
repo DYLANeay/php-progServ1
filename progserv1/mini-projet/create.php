@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $notes
         );
         // On redirige vers la page d'accueil avec tous les animaux
-        header("Location: view.php?id=" . $petId);
+        header("Location: view.php?id=" . $petId . "&success=1");
         exit();
     }
 }
